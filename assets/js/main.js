@@ -1,4 +1,4 @@
-
+alert("lista");
 /* QUE TIENE QUE HACER MI PROGRAMA:
 
 - Mostrar las primeras 10 tareas solamente
