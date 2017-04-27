@@ -5,9 +5,34 @@
 	<title>Lista de Tareas</title>
 </head>
 <body>
-	<script src="assets/js/main.js"></script>
-		<script src="assets/js/data.js"></script>
 
-	
+	<!-- QUE TENGO QUE TENER:
+	-Crear una lista <li> con checklist al lado
+	-Boton que agregue tareas nuevas que diga "Añadir tarea"
+	-La tarea nueva debe sumarse a la lista de tareas que ya tengo
+-->
+
+
+<div align="center" id="newData">
+	<form id="todoForm">
+		<h1>Mi Lista de Tareas<h1>
+			
+
+
+			<input type="text" id="todoAdd" placeholder="Proxima tarea">
+			<button type="button" id="boton" onclick="todoList()">+ Agregar tarea</button>
+		</form>
+	</div>
+			<ul id="todolist">
+			</ul>
+
+
+
+
+
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/data.js"></script>
+
+
 </body>
 </html>
