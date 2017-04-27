@@ -28,28 +28,31 @@ function todoList(){
 */
 
 
-var arr = [];
+var arreglo = [];
+
+var task = document.getElementById("todolist"); 
 for (var i = 0; i < 10; i++){
- arr.push(result[i]);
+ arreglo.push(arr[i]);
+  task.innerHTML += "<li>" + arreglo[i].title + "</li>" + "<br>";//imprime dentro de mi lista los 10 primeros elementos del arreglo
+
 }
 
+/*
+    arreglo.forEach(function(element){ 
+    	
+        
+    });*/
+ 
 
-function todoList(){
-
-    var task = document.getElementById("todolist"); 
-    arr.forEach(function(element){ 
-        task.innerHTML += '<li>' + element.title + '</li>';
-    }
-}
-todoList(); //
+//PARA INGRESAR NUEVOS VALORES DENTRO DE MI LISTA
 
 function addNewTask(){
     var task = document.getElementById("todolist");
     var add = document.getElementById("todoAdd").value;//para tomar todos los datos que sean ingresados cuando oprimo el boton 
-        task.innerHTML += '<li>' + Agregar + '</li>';
+        task.innerHTML += '<li>' + add + '</li>';
 
 }
 
-addNewTask();
+
 
 
