@@ -7,17 +7,9 @@
 (ideas? ciclo FOR con contador que agregue tareas nuevas)
 */
 
-/*PARA TENER LAS PRIMERAS 10 TAREAS:
-
-- Recorro array para buscar las primeras 10
-- .push para agregar cada una de las tareas al arreglo []
-*/
 
 
-
-
-
-//PARA AGREGAR TAREAS NUEVAS 
+/* prueba para agregar nuevas tareas que no funciono
 
 function todoList(){
 	var task = document.getElementById("todoInput").value
@@ -29,8 +21,35 @@ function todoList(){
 }
 
 
+/*PARA TENER LAS PRIMERAS 10 TAREAS:
+
+- Recorro array para buscar las primeras 10
+- .push para agregar cada una de las tareas al arreglo []
+*/
 
 
+var arr = [];
+for (var i = 0; i < 10; i++){
+ arr.push(result[i]);
+}
 
+
+function todoList(){
+
+    var task = document.getElementById("todolist"); 
+    arr.forEach(function(element){ 
+        task.innerHTML += '<li>' + element.title + '</li>';
+    }
+}
+todoList(); //
+
+function addNewTask(){
+    var task = document.getElementById("todolist");
+    var add = document.getElementById("todoAdd").value;//para tomar todos los datos que sean ingresados cuando oprimo el boton 
+        task.innerHTML += '<li>' + Agregar + '</li>';
+
+}
+
+addNewTask();
 
 
